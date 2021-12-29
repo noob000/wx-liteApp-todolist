@@ -1,0 +1,7 @@
+<view>
+    <checkbox-group bindchange="finishTodo">
+        <view wx:for="{{todo}}">
+            <checkbox value="{{index}}">content:{{item.content}}</checkbox>
+        </view>
+    </checkbox-group>
+</view>

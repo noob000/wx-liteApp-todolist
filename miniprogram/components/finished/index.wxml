@@ -1,0 +1,9 @@
+<view>
+        <view>已完成</view>
+        <checkbox-group bindchange="cancelFinish">
+            <view wx:for="{{finished}}" data-index="{{index}}">
+                <checkbox value="{{index}}" checked="{{checked}}"  bindlongpress="deleteFinished" data-index="{{index}}">
+                    内容：{{item.content}},日期：{{item.date}}</checkbox>
+            </view>
+        </checkbox-group>
+</view>

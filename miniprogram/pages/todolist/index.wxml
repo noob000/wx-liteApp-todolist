@@ -1,0 +1,8 @@
+<view>
+    <view>this is todolist</view>
+    <input placeholder="请输入todo的内容" model:value="{{content}}" />
+    <input placeholder="请输入todo对应的时间" model:value="{{date}}" />
+    <button bind:tap="addTodo">添加todo</button>
+    <unfinish bind:finishtodo="finishTodo" bind:deltodo="delTodo"todo="{{todo}}" id="unfinish" update="{{update}}" />
+    <finished bind:cancelfinish="cancelFinish" bind:delfinished="deleteFinished" finished="{{finished}}" id="finished"/>
+</view>

@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "unfinish":"../../components/unfinish/index",
+        "finished":"../../components/finished/index"
+    }
+}
